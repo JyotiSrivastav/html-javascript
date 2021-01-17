@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: grey;
+            font-family: cursive!important;
+            font-size: 24px;
+        }
+        
+        .container {
+            margin: auto;
+            /* background-color: cornflowerblue; */
+            background-color: white;
+            width: 1200px;
+            height: 690px;
+            height: 657px;
+            display: flex;
+            flex-direction: row;
+            /* margin-top: 70px; */
+            margin-top: 32px;
+        }
+        
+        .buttonContainer {
+            width: 400px;
+            /* height: 300px; */
+            display: flex;
+            margin: auto;
+            margin-top: 100px;
+            flex-direction: column;
+            /* background-color: paleturquoise; */
+        }
+        
+        .buttonStyle {
+            width: 352px;
+            /* height: 71px; */
+            /* margin: auto; */
+            margin: auto;
+            /* margin-right: 206px; */
+            color: white;
+            height: 52px;
+            background-color: #1ABC9C;
+            border: 1px solid olivedrab;
+            border-radius: 3px;
+            font-size: 27px;
+            font-family: cursive;
+            margin-bottom: 64px;
+        }
+        
+        .leftContainer {
+            width: 670px;
+            background-image: url('Resource/imga.png');
+            background-size: cover;
+        }
+        
+        .buttonStyle>a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .dash {
+            border-bottom: 1px solid red;
+        }
+        
+        #imgsmile {
+            margin-bottom: 31px;
+            margin-left: 145px;
+            margin-top: 0px;
+        }
+    </style>
+    <script src='buttonInputMethod.js'></script>
+    <script src='wordGenerator.js'></script>
+    <script src='imageHangmandisplays.js'></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='leftContainer'>
+            <!-- <img src='Resource/hangmanimage.jpg' width='500px'> -->
+        </div>
+        <div class='buttonContainer'>
+            <img src='Resource/img.jpg' width='100px' id='imgsmile'>
+            <button id='levelFirst' class='buttonStyle' onclick="chooseLevel(1)"><a href='firstPage.html'>Easy Level</a></button>
+            <button id='levelSecond' class='buttonStyle' onclick="chooseLevel(2)"><a href='firstPage.html'>Intermediate Level</a> </button>
+            <button id='levelThird' class='buttonStyle' onclick="chooseLevel(3)"> <a href='firstPage.html'>Advance Level</a> </button>
+        </div>
+    </div>
+</body>
+
+</html>

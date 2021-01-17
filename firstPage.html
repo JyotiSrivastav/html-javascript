@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="firstPage.css">
+
+    <script src='buttonInputMethod.js'></script>
+    <script src='wordGenerator.js'></script>
+    <script src='imageHangmandisplays.js'></script>
+</head>
+
+<body onload="startGame()">
+    <!-- onload="wordgenerator(event)" -->
+    <div class='divContainer'>
+        <div class='Gamename'>Hangman
+            <div id='showlevel'>level 1</div>
+        </div>
+
+
+        <!-- <div id='rounds'></div> -->
+        <div class='lifeHints'>
+            <div class='floatLeft'>
+                <div><button class='buttonDesign' id='changeLevel'> <a href='game.html'>Change Level</a> </button></div>
+                <button onclick="wordgenerator()" class='buttonDesign' id='nextButton'> New Game</button>
+                <button onclick="newGenerator()" class='buttonDesign' id='newButton'> New </button>
+                <button class='buttonDesign' id='btnHints' onclick="hintsDisplay()">Hint <div id='hints'></div></button>
+                <div class='buttonDesign change-button'>Chance:
+                    <div id='lifeLeft'>10</div>
+                </div>
+            </div>
+            <!-- <div class='floatRight'> </div> -->
+        </div>
+        <!-- <div>
+            < style="border-bottom: 1px solid red " id='divlineDraw' >
+        </div> -->
+        <div class='pointDisplay buttonDesign'>Points:
+            <div id='showpoint'></div>
+        </div>
+        <div id='demoAlpha'></div>
+        <div class='actionDisplay'>
+
+            <div class='hangmanImage'>
+                <!-- <p id='demo'> </p> width: 195px;-->
+                <img src='resource/startimage.jpg' style="width: 164px;" id='goodluck'>
+                <!-- <canvas id="myCanvas2">Your browser does not support the HTML5 canvas tag.</canvas> -->
+                <svg height="300" width="300" id='Imagehangman'>
+                  <line x1="0" y1="300" x2="60" y2="300" style="stroke:rgb(227, 102, 102);stroke-width:25" id='1' />
+                  
+                  <line x1="20" y1="20" x2="20" y2="300" style="stroke:rgb(227, 102, 102);stroke-width:5" id='2' />
+                  <line x1="20" y1="20" x2="200" y2="20" style="stroke:rgb(227, 102, 102);stroke-width:5" id='3' />
+                  <line x1="200" y1="20" x2="200" y2="100" style="stroke:rgb(227, 102, 102);stroke-width:5" id='4' />
+                  <circle cx="200" cy="100" r="30" stroke="black" stroke-width="3" fill="rgb(227, 102, 102)" id='5'/>
+                <circle cx="190" cy="90" r="5" stroke="black" stroke-width="3" fill="black" id='4' />
+                 
+                  <line x1="200" y1="130" x2="200" y2="190" style="stroke:rgb(227, 102, 102);stroke-width:5" id='6'/>
+                  <line x1="200" y1="160" x2="250" y2="140" style="stroke:rgb(227, 102, 102);stroke-width:5" id='7'/>
+                  <line x1="200" y1="190" x2="150" y2="220" style="stroke:rgb(227, 102, 102);stroke-width:5" id='8'/>
+                  <line x1="200" y1="160" x2="150" y2="140" style="stroke:rgb(227, 102, 102);stroke-width:5" id='9'/>
+                  <line x1="200" y1="190" x2="250" y2="220" style="stroke:rgb(227, 102, 102);stroke-width:5" id='10'/>
+                </svg>
+                <img src='resource/editimg.jpg' id='lostImage'>
+                <img src='resource/winner.jpg' id='winnerImage'>
+            </div>
+            <div class="alphabateContainer">
+
+                <div class='gridAlpha'>
+                    <button onclick="inputButton(this.id)" id='A' class='butn'>A</button>
+                    <button onclick="inputButton(this.id)" id='B' class='butn'>B</button>
+                    <button onclick="inputButton(this.id)" id='C' class='butn'>C</button>
+                    <button onclick="inputButton(this.id)" id='D' class='butn'>D</button>
+                    <button onclick="inputButton(this.id)" id='E' class='butn'>E</button>
+                    <button onclick="inputButton(this.id)" id='F' class='butn'>F</button>
+                    <button onclick="inputButton(this.id)" id='G' class='butn'>G</button>
+                    <button onclick="inputButton(this.id)" id='H' class='butn'>H</button>
+                    <button onclick="inputButton(this.id)" id='I' class='butn'>I</button>
+                    <button onclick="inputButton(this.id)" id='J' class='butn'>J</button>
+                    <button onclick="inputButton(this.id)" id='K' class='butn'>K</button>
+                    <button onclick="inputButton(this.id)" id='L' class='butn'>L</button>
+                    <button onclick="inputButton(this.id)" id='M' class='butn'>M</button>
+                    <button onclick="inputButton(this.id)" id='N' class='butn'>N</button>
+                    <button onclick="inputButton(this.id)" id='O' class='butn'>O</button>
+                    <button onclick="inputButton(this.id)" id='P' class='butn'>P</button>
+                    <button onclick="inputButton(this.id)" id='Q' class='butn'>Q</button>
+                    <button onclick="inputButton(this.id)" id='R' class='butn'>R</button>
+                    <button onclick="inputButton(this.id)" id='S' class='butn'>S</button>
+                    <button onclick="inputButton(this.id)" id='T' class='butn'>T</button>
+                    <button onclick="inputButton(this.id)" id='U' class='butn'>U</button>
+                    <button onclick="inputButton(this.id)" id='V' class='butn'>V</button>
+                    <button onclick="inputButton(this.id)" id='W' class='butn'>W</button>
+                    <button onclick="inputButton(this.id)" id='X' class='butn'>X</button>
+                    <button onclick="inputButton(this.id)" id='Y' class='butn'>Y</button>
+
+                </div>
+                <div class='gridAlz'> <button onclick="inputButton(this.id)" id='Z' class='butn'>Z</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

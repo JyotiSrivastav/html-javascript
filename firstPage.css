@@ -1,0 +1,232 @@
+ body {
+     background-color: grey;
+     font-size: 16px;
+     font-family: cursive!important;
+ }
+ 
+ .divContainer {
+     margin: auto;
+     width: 1200px;
+     /* height: 700px; */
+     background-color: lightcoral;
+     background-color: white;
+     /* background-image: url('Resource/images.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; */
+     padding: 20px;
+ }
+ 
+ .lifeHints {
+     width: 941px;
+     /* height: 70px; */
+     width: 1043px;
+     height: 58px;
+     margin: auto;
+     /* background-color: lightblue; */
+     padding-top: 20px;
+ }
+ 
+ .hangmanImage {
+     width: 500px;
+     height: 365px;
+     /* background-color: lightgrey; */
+     margin-right: 40px;
+ }
+ 
+ .alphabateContainer {
+     width: 500px;
+     height: 365px;
+     /* background-color: lightsteelblue; */
+     width: 401px;
+     margin-top: 13px;
+ }
+ 
+ .actionDisplay {
+     display: flex;
+     flex-direction: row;
+     margin-top: 20px;
+     margin-left: 80px;
+     /* margin: auto; */
+     margin-left: 126px;
+ }
+ 
+ .buttonDesign {
+     padding: 0px 10px;
+     /* margin-left: 40px; */
+     color: white;
+     background-color: #9E9D24;
+     background-color: #0091EA;
+     background-color: #1ABC9C;
+     border: #0091EA 1px solid;
+     border: 1px solid #1ABC9C;
+     border-radius: 5px;
+     font-size: 26px;
+     font-family: cursive;
+     font-weight: bold;
+     margin-right: 33px;
+ }
+ 
+ .buttonDesign a {
+     text-decoration: none;
+     color: #fff;
+ }
+ 
+ #dash {
+     font-size: 36px;
+     color: Blue;
+     margin-right: 5px;
+ }
+ 
+ .gridAlpha {
+     grid-template-columns: 0fr 0fr 0fr 0fr 0fr;
+     grid-row: 0fr 0fr 0fr;
+     width: 349px;
+     margin: auto;
+     display: grid;
+     column-gap: 5px;
+     row-gap: 3px;
+     /* margin-top: 57px; */
+     margin-left: 50px;
+ }
+ 
+ .gridAlpha>button {
+     height: 50px;
+     width: 50px;
+     background-color: #1976D2;
+     background-color: #1ABC9C;
+     column-gap: 10px;
+     row-gap: 10px;
+     border: 1px solid darkgreen;
+     color: white;
+     border-radius: 30px;
+     font-size: 33px;
+     font-size: 30px;
+     font-family: cursive;
+     font-weight: 900;
+ }
+ 
+ .gridAlz>button {
+     height: 50px;
+     width: 50px;
+     background-color: #1ABC9C;
+     border: 1px solid darkgreen;
+     color: white;
+     border-radius: 30px;
+     font-size: 36px;
+     font-weight: 500;
+     margin-left: 163px;
+     margin-top: 3px;
+ }
+ 
+ #demoAlpha {
+     /* width: 522px; */
+     height: 75px;
+     /* margin-top: 3px; */
+     margin-top: 39px;
+     margin-bottom: 20px;
+     margin-left: 100px;
+     font-size: 38px;
+     background-color: white;
+     font-size: 35px;
+     color: rgb(54, 207, 120);
+ }
+ 
+ #notshow {
+     background-color: lightsteelblue;
+     border: 1px solid lightsteelblue;
+ }
+ 
+ .floatRight {
+     float: right;
+ }
+ 
+ #divlineDraw {
+     margin-left: 40px;
+     margin-right: 40px;
+ }
+ 
+ .Gamename {
+     font-size: 52px;
+     color: #1ABC9C;
+     text-align: center;
+     /* background-color: lightgray; */
+     font-weight: 900;
+     border-bottom: 2px solid brown;
+     margin-bottom: 32px;
+     /* padding-bottom: 32px; */
+     margin-bottom: 37px;
+ }
+ 
+ .floatLeft {
+     display: inline-block;
+     position: relative;
+     width: 100%;
+ }
+ 
+ .change-button {
+     /* display: inline-block; */
+     float: right;
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ 
+ #lifeLeft {
+     height: 39px;
+     width: 32px;
+     /* background-color: blue; */
+     float: right;
+ }
+ 
+ #newButton {
+     visibility: hidden;
+ }
+ 
+ #hints {
+     color: white;
+     display: inline-block;
+ }
+ 
+ .pointDisplay {
+     float: right;
+     /* margin-right: 164px; */
+     margin-right: 112px;
+     display: flex;
+     /* width: 170px; */
+     padding-left: 10px;
+     padding-right: 10px;
+     /* margin-top: 10px; */
+     margin-top: 16px;
+ }
+ 
+ #totalPointshow {
+     text-align: center;
+ }
+ 
+ #lostImage {
+     width: 113px;
+     height: 76px;
+     margin-left: 311px;
+     margin-top: -247px;
+ }
+ 
+ #winnerImage {
+     width: 245px;
+     height: 183px;
+     margin: 10px;
+     margin-left: 222px;
+     margin-top: -248px;
+ }
+ 
+ #changeLevel {
+     margin-top: -38px;
+     margin-bottom: 16px;
+ }
+ 
+ #showlevel {
+     width: 293px;
+     margin-right: 104px;
+     /* display: inline; */
+     margin-left: 850px;
+     margin-right: 129px;
+     font-size: 29px;
+ }
